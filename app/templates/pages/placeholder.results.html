@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block head %}
+{{super()}}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+      body{
+      text-align:center;
+      font-size: 20px;
+
+      }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+
+  <ul id="dates">
+  {% for date in dates %}
+    <li>{{ date.strftime('%a %d %B %Y') }}</li>
+      <li>{{date.strftime('%H:%M')}}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

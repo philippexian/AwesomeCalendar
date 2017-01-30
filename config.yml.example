@@ -1,0 +1,16 @@
+debug: false
+
+oauth:
+    google:
+        id: GOOGLE_ID
+        secret: GOOGLE_SECRET
+    facebook:
+        id: FACEBOOK_ID
+        secret: FACEBOOK_SECRET
+
+database:
+    host: localhost
+    port: 3306
+    username: MYSQL_USERNAME
+    password: MYSQL_PASSWORD
+    db_name: MYSQL_DB_NAME
